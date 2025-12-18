@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1 {grid-area: a; background-color: #f8b400;}
+        .item2 {grid-area: b; background-color: #00f81d;}
+        .item3 {grid-area: c; background-color: #00bef8;}
+        .item4 {grid-area: d; background-color: #f83600;}
+        .item5 {grid-area: e; background-color: #f800e3;}
+        .item6 {grid-area: f; background-color: #4600f8; color: white;}
+        .item7 {grid-area: g; background-color: #00bef8;}
+        .item8 {grid-area: h; background-color: #f83600;}
+        .item9 {grid-area: i; background-color: #f800e3;}
+        .grid-contain {
+            display: grid;
+            grid-template-areas:
+                'a a a b'
+                'c d e f'
+                'g h i f';
+            grid-gap: 5px;
+            background-color: #ffffff;
+            padding: 10px;
+            grid-template-columns: 1fr 1fr 1fr 2fr;
+            grid-template-rows: 40vh 200px 200px;
+        }
+    </style>
+</head>
+
+<body>
+     <div class="grid-contain">
+        <div class="item1">学校要闻</div>
+        <div class="item2">快速链接</div>
+        <div class="item3">学校公告</div>
+        <div class="item4">学校通知</div>
+        <div class="item5">学校活动</div>
+        <div class="item6">学校动态</div>
+    </div>
+
+</body>
+</html>
